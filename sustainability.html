@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sustainability — ReWear</title>
+    <meta name="description" content="What choosing pre-loved really saves — and why the numbers matter more than the slogans.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=20261108-4">
+</head>
+<body>
+<header>
+    <div class="container">
+        <nav aria-label="Main">
+            <a class="logo" href="index.html">ReWear<span class="logo-dot">.</span></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="sell.html">Sell</a></li>
+                <li><a href="sustainability.html" aria-current="page">Sustainability</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="signin.html">Sign in</a></li>
+                <li><a href="signup.html" class="btn">Sign up</a></li>
+                <li><a href="checkout.html" class="cart-link">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main class="container">
+    <section class="page-intro">
+        <p class="eyebrow">Wear it longer</p>
+        <h1>The most sustainable wardrobe is the one you already own.</h1>
+        <p>Every pre-loved piece is one less new item made. Not a silver bullet — but a small, repeated choice that adds up faster than you'd think. Here's what it actually looks like, with real numbers instead of vague promises.</p>
+    </section>
+
+    <section class="reveal">
+        <div class="section-head">
+            <p class="eyebrow">Your impact</p>
+            <h2>See what your closet can do.</h2>
+            <p>Move the slider to estimate what happens when you choose pre-loved over new this year.</p>
+        </div>
+        <div class="impact-calc">
+            <label for="impact-slider" class="impact-slider-label">
+                Items you'll give a second life this year: <strong id="impact-count">12</strong>
+            </label>
+            <input id="impact-slider" type="range" min="1" max="100" value="12" aria-describedby="impact-note">
+            <p id="impact-note" class="impact-note">
+                Rough estimates based on industry averages. A single cotton T-shirt takes about 2,700 litres of water to produce, and a pair of jeans around 11,000 litres — so every pre-loved piece you choose avoids that cost.
+                <a href="https://csrone.com/news/8710" target="_blank" rel="noopener">Source: Oxfam / CSRone</a>.
+            </p>
+            <div class="impact-tiles">
+                <div class="impact-tile">
+                    <span class="impact-num" id="impact-water">32,400 L</span>
+                    <span class="impact-label">Water saved</span>
+                </div>
+                <div class="impact-tile">
+                    <span class="impact-num" id="impact-co2">120 kg</span>
+                    <span class="impact-label">CO₂ avoided</span>
+                </div>
+                <div class="impact-tile">
+                    <span class="impact-num" id="impact-showers">498</span>
+                    <span class="impact-label">Showers' worth of water</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reveal">
+        <div class="section-head">
+            <p class="eyebrow">The feeling</p>
+            <h2>That moment you find it.</h2>
+            <p>The rack, the search, the piece that feels like it was waiting for you.</p>
+        </div>
+        <div class="video-embed">
+            <video controls muted loop playsinline preload="metadata" poster="videos/pexels-thrift-poster.jpg" aria-label="Royalty-free footage of thrift shopping">
+                <source src="videos/pexels-thrift-shopping.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <p class="video-caption">
+            Royalty-free footage from Pexels.
+            <a href="https://videos.pexels.com/video-files/6120793/6120793-uhd_2732_1440_25fps.mp4" target="_blank" rel="noopener">Open the original clip →</a>
+        </p>
+    </section>
+
+    <section class="reveal">
+        <div class="section-head">
+            <p class="eyebrow">Listen while you browse</p>
+            <h2>The real story behind Egypt's sustainable fashion scene.</h2>
+            <p>Yara Yassin co-founded Upfuse from a graduation project. She talks about turning plastic waste into bags, building a brand nobody believed in, and why it mattered anyway.</p>
+        </div>
+        <article class="audio-card">
+            <div class="audio-meta">
+                <span class="audio-source">Egyptian Streets Podcast · 13 min</span>
+                <h3>Yara Yassin — Cofounding Upfuse</h3>
+                <p>A shorter cut: how a Cairo social enterprise turned recycled plastic into bags people actually want to carry.</p>
+            </div>
+            <a class="btn alt" href="https://podcasts.apple.com/us/podcast/063-%D9%85%D9%86-%D8%A7%D9%84%D9%85%D8%AE%D9%84%D9%81%D8%A7%D8%AA-%D8%A5%D9%84%D9%89-%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA/id1696966941?i=1000715587897" target="_blank" rel="noopener">Listen to the episode on Apple Podcasts</a>
+        </article>
+    </section>
+
+    <section class="reveal">
+        <div class="section-head">
+            <p class="eyebrow">In practice</p>
+            <h2>Three small habits that actually move the needle.</h2>
+        </div>
+        <div class="info-list">
+            <article>
+                <h2>1. Describe it honestly</h2>
+                <p>Clear details about condition and wear help buyers choose pieces they'll actually keep wearing — not return or throw away. Honesty sells better than hype.</p>
+            </article>
+            <article>
+                <h2>2. Buy what you'll really wear</h2>
+                <p>Second-hand works best when an item fills a real gap and gets worn often. A “deal” you never touch isn't a deal — it's just clutter with a discount.</p>
+            </article>
+            <article>
+                <h2>3. Pass it on</h2>
+                <p>When you're done with a piece, list it or donate it. Keeping it in circulation is what gives it another life — and keeps it out of landfill.</p>
+            </article>
+        </div>
+    </section>
+
+    <details class="faq-item">
+    <summary>What's a fair price for second-hand clothes in Egypt?</summary>
+    <p>On Libsy, Egypt's main pre-loved marketplace, the median asking price is <strong>EGP 500</strong>. Most everyday pieces sell between <strong>EGP 200 and 400</strong>, and under-EGP-200 items have the highest sell-through rate at 36%. Price near the median and your piece reaches the most buyers from day one. <a href="https://libsy.app/blog/what-preloved-clothes-sell-for-cairo" target="_blank" rel="noopener">See the full pricing data</a>.</p>
+   </details>
+
+    <section class="cta-band">
+        <a class="btn" href="shop.html">Find a pre-loved piece</a>
+        <a class="btn alt" href="sell.html">List an item</a>
+    </section>
+</main>
+<footer>
+    <div class="container cols">
+        <div><strong>ReWear</strong><p>Give fashion a second life.</p></div>
+        <ul>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="sell.html">Sell</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <p>&copy; 2026 ReWear. Student project.</p>
+    </div>
+</footer>
+<script src="script.js?v=20261108-10"></script>
+</body>
+</html>

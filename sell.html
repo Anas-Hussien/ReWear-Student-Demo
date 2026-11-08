@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sell a piece — ReWear</title>
+    <meta name="description" content="List a piece you no longer wear. Honest details, real buyers, no listing fees.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=20261108-4">
+</head>
+<body>
+<header>
+    <div class="container">
+        <nav aria-label="Main">
+            <a class="logo" href="index.html">ReWear<span class="logo-dot">.</span></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="sell.html" aria-current="page">Sell</a></li>
+                <li><a href="sustainability.html">Sustainability</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="signin.html">Sign in</a></li>
+                <li><a href="signup.html" class="btn">Sign up</a></li>
+                <li><a href="checkout.html" class="cart-link">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main class="container">
+<section class="page-intro">
+    <p class="eyebrow">Sell</p>
+    <h1>Your closet has value. Let's unlock it.</h1>
+    <p>Someone out there is looking for exactly what you've stopped wearing. A few honest details and one clear photo — that's all it takes to give a piece its next home. And honestly? It feels good to pass something on.</p>
+</section>
+
+    <section>
+        <div class="section-head">
+            <p class="eyebrow">The listing</p>
+            <h2>Tell us about your piece.</h2>
+            <p>Be honest about condition — buyers respond to it, and it makes the whole community stronger.</p>
+        </div>
+    </section>
+    <section class="reveal">
+    <div class="section-head">
+        <p class="eyebrow">For the builders</p>
+        <h2>Thinking of turning your closet into a small business?</h2>
+        <p>Rami Helaly started Kotn between Egypt and Canada. He talks about the first mistake, the moment he left his job, and why Egyptian cotton mattered more than fast growth.</p>
+    </div>
+    <div class="audio-card">
+        <div class="audio-meta">
+            <span class="audio-source">El Mal El Halal · Arabic</span>
+            <h3>Rami Helaly — Building Kotn from Zero</h3>
+            <p>An honest conversation about starting a fashion brand in Egypt, the mistakes, and what actually matters.</p>
+        </div>
+        <a class="btn" href="https://youtu.be/D7ickxWkpMo?si=E1W4F49NxXZPWxhu" target="_blank" rel="noopener">Watch on YouTube</a>
+    </div>
+</section>
+    <section>
+        <form id="sell-form" class="listing-form">
+            <label>Item name<input name="name" maxlength="60" placeholder="e.g. Levi's 501 Straight Jeans" required></label>
+            <label>Category
+                <select name="cat" required>
+                    <option value="">Choose a category</option>
+                    <option>Shirts</option><option>Jeans</option><option>Jackets</option>
+                    <option>Dresses</option><option>Shoes</option><option>Accessories</option>
+                </select>
+            </label>
+            <label>Price (EGP)<input name="price" type="number" min="0.01" step="0.01" placeholder="350.00" required></label>
+            <label>Condition
+                <select name="cond" required>
+                    <option value="">Choose condition</option>
+                    <option>Like New</option><option>Good</option><option>Fair</option>
+                </select>
+            </label>
+            <label>Size<input name="size" maxlength="20" placeholder="M / 42 / One size" required></label>
+            <label>Brand (optional)<input name="brand" maxlength="40" placeholder="e.g. Zara"></label>
+            <label>Your name<input name="seller" maxlength="40" placeholder="So buyers know who they're talking to" required></label>
+            <label class="full-width">Photo (optional)
+                <input name="photo" type="file" accept="image/jpeg,image/png,image/webp">
+                <span class="field-hint">Image files only; photos are resized before saving in this browser.</span>
+            </label>
+            <label class="full-width">Description (optional)
+                <textarea name="desc" rows="4" maxlength="300" placeholder="Fit, fabric, any wear, and why you loved it."></textarea>
+            </label>
+            <div class="listing-actions full-width">
+                <button class="btn" type="submit">List my piece</button>
+                <a href="shop.html" class="link">Back to shop</a>
+            </div>
+            <p id="sell-status" class="listing-status full-width" role="status" aria-live="polite"></p>
+        </form>
+    </section>
+
+    <section class="reveal">
+        <div class="section-head">
+            <p class="eyebrow">Tips from the community</p>
+            <h2>What makes a listing feel worth buying?</h2>
+        </div>
+        <div class="benefits">
+            <article class="benefit">
+                <span class="benefit-icon" aria-hidden="true">📸</span>
+                <h3>Photograph it in daylight</h3>
+                <p>A clear photo in natural light helps show the real colour and texture.</p>
+            </article>
+            <article class="benefit">
+                <span class="benefit-icon" aria-hidden="true">✍️</span>
+                <h3>Say what you'd want to know</h3>
+                <p>Fit, fabric, any small flaws. Honest descriptions build trust and sell faster.</p>
+            </article>
+            <article class="benefit">
+                <span class="benefit-icon" aria-hidden="true">💛</span>
+                <h3>Price for a second home</h3>
+                <p>Fair prices sell. Ask yourself: what would make a stranger excited to press "buy"?</p>
+            </article>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="container cols">
+        <div><strong>ReWear</strong><p>Give fashion a second life.</p></div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="sustainability.html">Sustainability</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <p>&copy; 2026 ReWear. Student project.</p>
+    </div>
+</footer>
+<script src="script.js?v=20261108-10"></script>
+</body>
+</html>

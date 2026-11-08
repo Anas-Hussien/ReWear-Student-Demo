@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Shop — ReWear</title>
+    <meta name="description" content="Browse pre-loved clothes and accessories. Filter by category, size, and price.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=20261108-4">
+</head>
+<body>
+<header>
+    <div class="container">
+        <nav aria-label="Main">
+            <a class="logo" href="index.html">ReWear<span class="logo-dot">.</span></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html" aria-current="page">Shop</a></li>
+                <li><a href="sell.html">Sell</a></li>
+                <li><a href="sustainability.html">Sustainability</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="signin.html">Sign in</a></li>
+                <li><a href="signup.html" class="btn">Sign up</a></li>
+                <li><a href="checkout.html" class="cart-link">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+    <div class="container">
+       <section class="page-intro">
+   <p class="eyebrow">The shop</p>
+     <h1>Pieces looking for their next chapter.</h1>
+     <p>Hand-picked, honestly described, and priced like a real thrift shop — most everyday pieces sit between <strong>EGP 200 and 400</strong>, because that's where our community actually buys.</p>
+             </section>
+        <section>
+            <div class="toolbar">
+                <input id="search" type="search" placeholder="Search by name or brand" aria-label="Search">
+                <select id="category" aria-label="Category">
+                    <option value="all">All categories</option>
+                    <option>Shirts</option>
+                    <option>Jeans</option>
+                    <option>Jackets</option>
+                    <option>Dresses</option>
+                    <option>Shoes</option>
+                    <option>Accessories</option>
+                </select>
+                <input id="size" type="search" placeholder="Size (e.g. M, 42)" aria-label="Size">
+                <label class="visually-hidden" for="min-price">Minimum price in EGP</label>
+                <input id="min-price" type="number" min="0" step="0.01" placeholder="Min price (EGP)">
+                <label class="visually-hidden" for="max-price">Maximum price in EGP</label>
+                <input id="max-price" type="number" min="0" step="0.01" placeholder="Max price (EGP)">
+                <select id="sort" aria-label="Sort">
+                    <option value="newest">Sort: newest</option>
+                    <option value="low">Price: low to high</option>
+                    <option value="high">Price: high to low</option>
+                </select>
+                <button class="btn alt filter-reset" id="clear-filters" type="button">Clear filters</button>
+            </div>
+            <p class="results-count" id="results-count" aria-live="polite"></p>
+            <p class="error" id="listing-status" role="alert"></p>
+            <div class="grid" id="products"></div>
+        </section>
+
+        <section class="reveal">
+    <div class="section-head">
+        <p class="eyebrow">Style, not waste</p>
+        <h2>Vintage isn't a compromise. It's a flex.</h2>
+        <p>Gannah Anwar mixes vintage finds with pieces she already owns — proof that second-hand can look more put-together than anything off a fast-fashion shelf.</p>
+    </div>
+    <div class="video-embed">
+        <video controls muted playsinline preload="none" poster="videos/pexels-thrift-poster.jpg" aria-label="Royalty-free footage of thrift shopping">
+            <source src="videos/pexels-thrift-shopping.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <p class="video-caption">Royalty-free thrift-shopping footage. <a href="https://www.tiktok.com/@gannahanwar" target="_blank" rel="noopener">Visit Gannah Anwar on TikTok →</a></p>
+    </section>
+
+    </div>
+</main>
+<footer>
+    <div class="container cols">
+        <div><strong>ReWear</strong><p>Give fashion a second life.</p></div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sell.html">Sell</a></li>
+            <li><a href="sustainability.html">Sustainability</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <p>&copy; 2026 ReWear. Student project.</p>
+    </div>
+</footer>
+<script src="script.js?v=20261108-10"></script>
+</body>
+</html>

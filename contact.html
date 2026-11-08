@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact — ReWear</title>
+    <meta name="description" content="Get in touch with ReWear. Real humans, real replies.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=20261108-4">
+</head>
+<body>
+<header>
+    <div class="container">
+        <nav aria-label="Main">
+            <a class="logo" href="index.html">ReWear<span class="logo-dot">.</span></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="sell.html">Sell</a></li>
+                <li><a href="sustainability.html">Sustainability</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
+                <li><a href="signin.html">Sign in</a></li>
+                <li><a href="signup.html" class="btn">Sign up</a></li>
+                <li><a href="checkout.html" class="cart-link">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main class="container">
+    <section class="page-intro">
+    <p class="eyebrow">Contact</p>
+    <h1>Questions? Start here.</h1>
+    <p>Questions about a listing, a bug, or an idea? Use this demo form to preview the support flow. Messages are not delivered to an inbox.</p>
+</section>
+
+    <section class="contact-section">
+        <div class="contact-grid">
+            <form id="contact-form" class="contact-form">
+                <h2>Send us a message</h2>
+                <label>Email address
+                    <input type="email" name="email" autocomplete="email" placeholder="you@example.com" required>
+                </label>
+                <label>WhatsApp number
+                    <input type="tel" name="whatsapp" autocomplete="tel" placeholder="+1 555 123 4567" required>
+                </label>
+                <label>Social or Messenger (optional)
+                    <input name="social" placeholder="App name and username">
+                </label>
+                <label>How can we help?
+                    <textarea name="message" rows="5" maxlength="1000" placeholder="Tell us what's on your mind — the more detail, the better." required></textarea>
+                </label>
+                <p class="contact-note">ReWear is a student demo — this form isn't connected to a live inbox yet. But the questions it asks are the ones a real support team would need.</p>
+                <button class="btn" type="submit">Send message</button>
+                <p id="contact-status" class="contact-status" role="status" aria-live="polite"></p>
+            </form>
+
+            <aside>
+                <div class="section-head">
+                    <p class="eyebrow">Quick answers</p>
+                    <h2>Before you write.</h2>
+                </div>
+                <div class="faq">
+                    <details class="faq-item">
+                        <summary>Is ReWear a real marketplace?</summary>
+                        <p>Not yet — this is a student project exploring what a warmer, more sustainable second-hand shop could look like. Orders and accounts are simulated.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>How do payments work?</summary>
+                        <p>They don't. There's no real checkout, no card details, and no money moves. Everything you see is a demo.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Can I return something?</summary>
+                        <p>Since no real orders are placed, there's nothing to return. In a live version, we'd offer a simple return window and clear condition guarantees.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Something's broken — where do I report it?</summary>
+                        <p>Use the form on this page. Describe what happened and which page you were on. Screenshots help too.</p>
+                    </details>
+                </div>
+            </aside>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="container cols">
+        <div><strong>ReWear</strong><p>Give fashion a second life.</p></div>
+        <ul>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="sell.html">Sell</a></li>
+            <li><a href="sustainability.html">Sustainability</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+        <p>&copy; 2026 ReWear. Student project.</p>
+    </div>
+</footer>
+<script src="script.js?v=20261108-10"></script>
+</body>
+</html>

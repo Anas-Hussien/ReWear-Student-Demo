@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign in - ReWear</title>
+    <meta name="description" content="ReWear: buy and sell pre-loved fashion.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=20261108-4">
+</head>
+<body>
+<header>
+    <div class="container">
+        <nav aria-label="Main">
+            <a class="logo" href="index.html">ReWear</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="sell.html">Sell</a></li>
+                <li><a href="sustainability.html">Sustainability</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="signin.html" aria-current="page">Sign in</a></li>
+                <li><a href="signup.html" class="btn">Sign up</a></li>
+                <li><a href="checkout.html">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+    <div class="container">
+        <section class="auth-card" aria-labelledby="signin-title">
+            <p class="eyebrow">Welcome back</p>
+            <h1 id="signin-title">Sign in</h1>
+            <p class="auth-sub">Access your ReWear account to pick up where you left off.</p>
+            <p class="demo-notice" role="note">Demo only. Account details are stored in this browser. Do not use a real password.</p>
+            <form id="signin-form" novalidate>
+                <label>Email
+                    <input name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+                </label>
+                <label>Password
+                    <input name="password" type="password" autocomplete="current-password" placeholder="Your password" required>
+                </label>
+                <p class="error" role="alert" aria-live="polite"></p>
+                <button class="btn" type="submit">Sign in</button>
+                <p class="auth-foot">New to ReWear? <a href="signup.html">Create an account</a>.</p>
+            </form>
+        </section>
+    </div>
+</main>
+<footer>
+    <div class="container cols">
+        <div><strong>ReWear</strong><p>Give fashion a second life.</p></div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="sell.html">Sell</a></li>
+            <li><a href="sustainability.html">Sustainability</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+
+    </div>
+
+</footer>
+
+<script src="script.js?v=20261108-10"></script>
+
+</body>
+
+</html>

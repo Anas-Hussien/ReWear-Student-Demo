@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cart - ReWear</title>
+    <meta name="description" content="Review your ReWear demo shopping cart.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=20261108-4">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav aria-label="Main">
+                <a class="logo" href="index.html">ReWear</a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="sell.html">Sell</a></li>
+                    <li><a href="checkout.html" aria-current="page">Cart (<span id="cart-count">0</span>)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section>
+                <h1>Your cart</h1>
+                <p>This is a demo checkout. No payment details are collected and no real payment is made.</p>
+                <p class="error" id="checkout-status" role="alert"></p>
+                <div id="cart-items"></div>
+                <p><strong>Total: <span id="cart-total">EGP 0.00</span></strong></p>
+                <button class="btn" id="place-order" type="button" disabled>Place demo order</button>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container cols">
+            <div><strong>ReWear</strong><p>Give fashion a second life.</p></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="script.js?v=20261108-10"></script>
+</body>
+</html>
